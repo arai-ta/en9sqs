@@ -3,7 +3,7 @@ all: dep build
 
 .PHONY: dep
 dep:
-	dep ensure -vendor-only
+	go mod vendor
 
 .PHONY: build
 build:
